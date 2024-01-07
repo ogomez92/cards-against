@@ -17,7 +17,7 @@ const EXPIRATION_TIME = 60 * 60 * 24 * 7 // 1 week
  */
 async function useRedis(fn) {
   const redis = new Redis(
-    process.env.REDIS_URL,
+    '127.0.0.1',
     { family: 6, reconnectOnError: () => 1 }
   )
   redis.on('error', err => {

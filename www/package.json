@@ -5,11 +5,11 @@
     "dev": "vite --port 4000",
     "build": "vite build",
     "copy": "cp ../_redirects dist/_redirects",
-    "deploy": "yarn build && yarn copy",
+    "deploy": "npm run build && npm run copy",
     "serve": "vite preview",
     "lint:fix": "eslint ./src --ext .jsx,.js --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier --loglevel warn --write \"./**/*.{js,jsx,css,md,json}\" ",
-    "lint": "yarn lint:format && yarn lint:fix"
+    "lint": "npm run lint:format && npm run lint:fix"
   },
   "pre-commit": "lint",
   "license": "MIT",

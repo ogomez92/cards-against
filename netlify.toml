@@ -1,4 +1,0 @@
-[build]
-  base = "www/"
-  publish = "dist/"
-  command = "yarn deploy"

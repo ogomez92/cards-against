@@ -1,3 +1,4 @@
 export default {
-  api: process.env.NODE_ENV === 'production' ? 'https://cards-against.fly.dev' : 'http://localhost:5000'
+  api: 'https://cartas.oriolgomez.com/api',
+  socketServer: 'https://cartas.oriolgomez.com',
 }
