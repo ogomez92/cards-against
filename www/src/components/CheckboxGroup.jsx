@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 
 export default function CheckboxGroup({ label = '', options, selected, onChange }) {

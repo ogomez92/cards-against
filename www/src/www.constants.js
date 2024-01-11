@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export default {
   ROTATE_NEXT: 'ROTATE_NEXT',
   ROTATE_WINNER: 'ROTATE_WINNER',

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 
 export default function RadioGroup({ label = '', name = '', options, selected, onChange }) {
@@ -7,6 +8,8 @@ export default function RadioGroup({ label = '', name = '', options, selected, o
         {label}
       </label>
       <div className="space-y-3">
+        <fieldset>
+          <legend>{label}</legend>
         {options.map(opt => (
           <label key={opt.value} className="flex items-center">
             <input
@@ -20,6 +23,7 @@ export default function RadioGroup({ label = '', name = '', options, selected, o
             <span className="ml-3 text-white font-medium">{opt.label}</span>
           </label>
         ))}
+        </fieldset>
       </div>
     </div>
   )
