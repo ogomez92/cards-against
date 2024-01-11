@@ -29,7 +29,7 @@ class Round {
   }
 
   addWhiteCard(card, playerId) {
-    this.whiteCards.push({ card, player: playerId, hidden: true })
+    this.whiteCards.push({ card, player: playerId, hidden: false })
   }
 
   revealWhiteCards(player) {

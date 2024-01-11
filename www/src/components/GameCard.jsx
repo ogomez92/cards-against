@@ -34,7 +34,7 @@ export default function GameCard({
       <div
       aria-label={text.replaceAll('_', '(blanco)')}
       style={{ color }} className="font-semibold">
-        {text}
+        <span aria-hidden="true">{text}</span>
       </div>
       {showBadge && (
         <span className="absolute bottom-2 right-2 block font-medium w-6 text-center rounded-full bg-white text-gray-900">
