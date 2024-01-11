@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import ButtonCard from '@/components/ButtonCard'
@@ -65,7 +66,7 @@ export default function Home() {
         </Link>
         <Link to="/guide" className="text-center font-medium hover:underline flex items-center gap-3">
           <QuestionMarkCircleIcon className="w-6 h-6" />
-          <p>¿Como se juega?</p>
+          <p>¿Cómo se juega?</p>
         </Link>
       </div>
     </div>

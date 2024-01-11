@@ -144,7 +144,7 @@ export default function CreateGame() {
           backgroundColor="bg-white hover:bg-blue-50"
           onClick={() => navigate(-1)}
         >
-          <ArrowLeftIcon className="w-5 h-5" />
+          <ArrowLeftIcon aria-hidden="true" className="w-5 h-5" />Atrás
         </Button>
         <h2 className="mt-4 mb-8 text-3xl font-semibold">Nueva partida</h2>
         <form onSubmit={handleSubmit} className="space-y-8">
@@ -170,10 +170,11 @@ export default function CreateGame() {
                 checked={isPublic}
                 onChange={ev => setIsPublic(ev.target.checked)}
                 className="h-5 w-5 text-blue-500 rounded-sm"
+                aria-describedby="public-game-warning"
               />
-              <span className="ml-3 text-white font-medium">Pública</span>
+              <span className="ml-3 text-white font-medium">Esta Partida es Pública</span>
             </label>
-            <p className="block ml-1 mb-2 text-sm text-gray-200 font-medium">
+            <p id="public-game-warning" className="block ml-1 mb-2 text-sm text-gray-200 font-medium">
               Si marcas esta opción la partida aparecerá en el menú <em>Unirse a una partida</em>
             </p>
           </div>
