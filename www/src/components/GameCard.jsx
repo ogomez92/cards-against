@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 
 const bgmap = {
@@ -30,7 +31,9 @@ export default function GameCard({
       className={`${className} relative hover:shadow-lg flex justify-start items-start ${br} w-52 h-52 p-3`}
       {...props}
     >
-      <div style={{ color }} className="font-semibold">
+      <div
+      aria-label={text.replaceAll('_', '(blanco)')}
+      style={{ color }} className="font-semibold">
         {text}
       </div>
       {showBadge && (

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from 'react'
 import { editGame } from '@/lib/gameUtils'
 import { useQueryClient } from 'react-query'

@@ -2,7 +2,7 @@
 
 Juego de cartas multijugador online inspirado en "Cartas contra la humanidad"
 
-Este es un fork que arregla muchos problemas de accesibilidad y que está preparado para montar en un servidor propio y no en un netlify.
+Este es un fork que arregla muchos problemas de accesibilidad y que estï¿½ preparado para montar en un servidor propio y no en un netlify.
 
 ### como montar el proyecto
 tenemos dos componentes:
@@ -13,7 +13,7 @@ en ambas carpetas es necesario instalar las dependencias `node_modules` (con `np
 
 Hay que cambiar, en el archivo src/config, el api y el socket.
 
-Además si quieres usarlo en tu propio servidor hay que instalar Redis, eso en Ubuntu se hace con `apt install redis`.
+Ademï¿½s si quieres usarlo en tu propio servidor hay que instalar Redis, eso en Ubuntu se hace con `apt install redis`.
 
 Una vez hecho esto:
 
@@ -22,9 +22,9 @@ Una vez hecho esto:
 
 #### Configurando el proxy
 
-Yo lo tengo hecho con Caddy 2, os paso un ejemplo, podéis adaptarlo a Nginx, Apache o lo que queráis.
+Yo lo tengo hecho con Caddy 2, os paso un ejemplo, podï¿½is adaptarlo a Nginx, Apache o lo que querï¿½is.
 
-Con el Caddy nos olvidamos también del archivo de redirects, pero es necesario porque es una single Page Application con su propio ruteado y si no se va a liar.
+Con el Caddy nos olvidamos tambiï¿½n del archivo de redirects, pero es necesario porque es una single Page Application con su propio ruteado y si no se va a liar.
 
 ```caddyfile
 cartas.oriolgomez.com {
@@ -52,4 +52,7 @@ cartas.oriolgomez.com {
 
 ### contribuciones
 
-Todas las contribuciones son bienvenidas, tanto en forma de feedback (issue) como en forma de código (PR) siempre que se mantengan las reglas de estilo definidas via eslint
+Todas las contribuciones son bienvenidas, tanto en forma de feedback (issue) como en forma de cï¿½digo (PR) siempre que se mantengan las reglas de estilo definidas via eslint
+
+*AtenciÃ³n*: Para que el juego sea accesible, los espacios en blanco en las cartas negras se escribirÃ¡n siempre con un sÃ­mbolo de subrayado (_) igual que en las cartas base. Ejemplo: Fui al supermercado y comprÃ© una bolsa de patatas y _.
+Esto hace que el juego reemplace correctamente los subrayados por (blanco) para tecnologÃ­as de asistencia como los lectores de pantalla.
