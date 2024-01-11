@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { Fragment, useEffect, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Button from '@/components/Button'
@@ -20,6 +21,12 @@ export default function Modal({ show, title, children, onClose, showCloseButton 
         initialFocus={closeRef}
         className="text-gray-900 fixed inset-0 z-10 overflow-y-auto"
         onClose={onClose}
+        onKeyUp={(event) => {
+          if (event.key === 'Escape' || event.key === 'Enter') {
+            onClose();
+          }
+        }}
+      
       >
         <div className="min-h-screen text-center">
           <Transition.Child
@@ -34,7 +41,7 @@ export default function Modal({ show, title, children, onClose, showCloseButton 
             <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-50" />
           </Transition.Child>
           {/* This element is to trick the browser into centering the modal contents. */}
-          <span className="inline-block h-screen align-middle" aria-hidden="true">
+          <span className="inline-block h-screen align-middle">
             &#8203;
           </span>
           <Transition.Child
@@ -47,6 +54,7 @@ export default function Modal({ show, title, children, onClose, showCloseButton 
             leaveTo="opacity-0 scale-95"
           >
             <div
+            role="alert"
               style={{ minWidth: 300 }}
               className={classNames(
                 'transition-all transform',
