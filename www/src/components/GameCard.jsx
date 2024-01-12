@@ -31,11 +31,16 @@ export default function GameCard({
       className={`${className} relative hover:shadow-lg flex justify-start items-start ${br} w-52 h-52 p-3`}
       {...props}
     >
+      <main>
+        <h2>
       <div
-      aria-label={text.replaceAll('_', '(blanco)')}
+aria-label={text ? text.toString().replaceAll('_', '(blanco)') : null}
+aria-live ={type === 'black' ? 'assertive' : 'null'}
       style={{ color }} className="font-semibold">
         <span aria-hidden="true">{text}</span>
       </div>
+      </h2>
+      </main>
       {showBadge && (
         <span className="absolute bottom-2 right-2 block font-medium w-6 text-center rounded-full bg-white text-gray-900">
           {badge}

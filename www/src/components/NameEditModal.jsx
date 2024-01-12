@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import usePlayerId from '@/lib/usePlayerId'
 import React, { useState } from 'react'
 import Button from './Button'
@@ -20,6 +21,7 @@ export default function NameEditModal({ game, socket }) {
     <Modal showCloseButton={false} onClose={() => {}} show={!player} title="Introduce un nombre de usuario">
       <form className="mt-6" onSubmit={handleSubmit}>
         <Input
+        aria-required="true"
           type="text"
           value={name}
           onFocus={ev => ev.target.select()}
@@ -30,10 +32,10 @@ export default function NameEditModal({ game, socket }) {
         />
         {nameIsRepeated && (
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-red-500 py-2 text-sm">
-            Este nombre no esta disponible
+            Este nombre ya lo utiliza otra persona.
           </motion.p>
         )}
-        <Button disabled={!name || nameIsRepeated} className="disabled:opacity-50 mt-4" type="submit">
+        <Button aria-hidden={!name || nameIsRepeated} disabled={!name || nameIsRepeated} className="disabled:opacity-50 mt-4" type="submit">
           Enviar
         </Button>
       </form>
