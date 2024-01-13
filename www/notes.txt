@@ -1,2 +1,6 @@
 ARreglar el modal en playgame de la carta ganadora, a ver si puedo reemplazar los espacios en blanco de alguna manera.
 arreglar el card selected de las cartas del juez en playGame
+
+hay un focus trap chungo en el submit en el name edit dialog
+meter atajos teclado. con el formulario desactivado pulsa E para elegir y D para descartar, todo esto dentro de un aria-describedby.
+qutiar jugador. de las listas porque es obvio que no es el juez
