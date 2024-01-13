@@ -1,6 +1,5 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
-
 const bgmap = {
   white: 'white',
   black: '#333'
@@ -34,7 +33,7 @@ export default function GameCard({
       <main>
         <h2>
       <div
-aria-label={text ? text.toString().replaceAll('_', '(blanco)') : null}
+aria-label={typeof(text) === 'string' ? text.toString().replaceAll('_', '(blanco)') : null}
 aria-live ={type === 'black' ? 'assertive' : 'null'}
       style={{ color }} className="font-semibold">
         <span aria-hidden="true">{text}</span>
