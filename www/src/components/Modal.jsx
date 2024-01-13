@@ -22,7 +22,7 @@ export default function Modal({ show, title, children, onClose, showCloseButton 
         className="text-gray-900 fixed inset-0 z-10 overflow-y-auto"
         onClose={onClose}
         onKeyUp={(event) => {
-          if (event.key === 'Escape' || event.key === 'Enter') {
+          if (event.key === 'Escape') {
             onClose();
           }
         }}
@@ -54,7 +54,6 @@ export default function Modal({ show, title, children, onClose, showCloseButton 
             leaveTo="opacity-0 scale-95"
           >
             <div
-            role="alert"
               style={{ minWidth: 300 }}
               className={classNames(
                 'transition-all transform',

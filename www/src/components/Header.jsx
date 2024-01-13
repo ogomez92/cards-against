@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom'
@@ -14,8 +15,8 @@ export default function Header() {
   return (
     <header className="flex p-3">
       <Link to="/" className="flex items-center space-x-2">
-        <img src={logo} width={36} height={36} alt="Logo de Cartas contra la Web" />
-        <h1 aria-label="Cartas contra la Web" className="text-2xl">CCW</h1>
+        <img src={logo} width={36} height={36} alt="Logo de Cartas contra la Humanidad" />
+        <h1 aria-label="Cartas contra la Humanidad" className="text-2xl">CCW</h1>
       </Link>
       <div className="flex-grow"></div>
       {/* <Select options={OPTIONS} selected={selected} onChange={setSelected} className="w-20 text-gray-700" /> */}

@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { editGame } from '@/lib/gameUtils'
 import { useQueryClient } from 'react-query'
 import { useNavigate } from 'react-router-dom'
@@ -33,6 +33,7 @@ function PlayGameUI({ socket, game }) {
   const playerData = game?.players.find(p => p.id === playerId)
   const cardsToPick = game?.round.blackCard?.pick || 1
   const playerIsHost = playerId === game?.round.host
+  const blackCardRef = useRef()
 
   const roundPlayed = game?.round.whiteCards.some(c => c.player === playerId)
   const playersReady = game?.players.filter(p => game.round.whiteCards.some(c => c.player === p.id)).length
@@ -116,6 +117,10 @@ function PlayGameUI({ socket, game }) {
 
   function closeModal() {
     setShowRoundModal(false)
+    if (blackCardRef.current) {
+      blackCardRef.current.focus()
+    }
+
   }
 
   function closeGameOverModal() {
@@ -128,7 +133,7 @@ function PlayGameUI({ socket, game }) {
   }
 
   if (playerData && game.players.length < 2) {
-    return <ErrorMessage message="No hay nadie mas en este juego" />
+    return <ErrorMessage message="No hay nadie más en este juego" />
   }
 
   return (
@@ -164,7 +169,7 @@ function PlayGameUI({ socket, game }) {
           onDiscard={discardWhiteCards}
         />
       ) : (
-        <p className="text-center pb-8">
+        <p role="alert" className="text-center pb-8">
           {allCardsSent
             ? playerIsHost
               ? ''
@@ -181,7 +186,7 @@ function GameOverModal({ closeModal, game }) {
   const players = game.players.slice().sort((a, b) => b.points - a.points)
   return (
     <Modal show={game.finished} onClose={closeModal} title="Fin de la partida">
-      <ul className="pt-4">
+      <ul role="alert" className="pt-4">
         {players.map(p => (
           <li className="text-gray-700" key={p.id}>
             <strong className="font-bold">{p.name}:</strong> {p.points} puntos
@@ -204,11 +209,11 @@ function RoundModal({ closeModal, show, game }) {
   const blackCard = round ? round.blackCard : { text: '' }
   return (
     <Modal show={show} onClose={closeModal} title={title}>
-      <div className="pt-8 gap-4 flex flex-wrap items-center justify-center content-center">
+      <div role="alert" className="pt-8 gap-4 flex flex-wrap items-center justify-center content-center">
         <GameCard type="black" text={decodeHtml(blackCard.text)} badge={blackCard.pick} />
         {whiteCards.map(c => (
           <GameCard className="shadow-md" text={decodeHtml(c.card)} type="white" key={c.card} />
-        ))}
+          ))}
       </div>
     </Modal>
   )
@@ -233,7 +238,7 @@ function getPlayerState(game, player) {
     )
   } else {
     return (
-      <span title="Jugador. Esperando a que este jugador envie su carta">
+      <span title="Jugador. Esperando a que este jugador envíe su carta">
         <Clock className="w-6 h-6 opacity-50" />
       </span>
     )
@@ -246,17 +251,18 @@ function PlayersInfo({ playerId, game, onRemovePlayer }) {
   const roundNum = game.finishedRounds.length + 1
   return (
     <>
-      <p className="text-lg font-bold pb-3">Ronda {roundNum}</p>
-      <ul className="px-1 space-y-3 overflow-hidden">
+      <p aria-live="polite" className="text-lg font-bold pb-3">Ronda {roundNum}</p>
+      <aside>
+      <ul aria-atomic="true" aria-live="polite" className="px-1 space-y-3 overflow-hidden">
         {game.players.map(p => (
           <li key={p.id} className="flex space-x-3 items-center">
             {getPlayerState(game, p)}
-            <span className="font-medium font-mono bg-gray-900 px-2 py-1 rounded-lg">{p.points}</span>
             <span className={`${p.id === host ? 'font-bold' : 'font-medium'} truncate text-lg`}>{p.name} </span>
+            <span className="font-medium font-mono bg-gray-900 px-2 py-1 rounded-lg"> ({p.points} puntos)</span>
             {playerId === creator && (
               <button
-                title="Eliminar jugador"
-                aria-label="Eliminar jugador"
+                title="Expulsar jugador"
+                aria-label="Expulsar jugador"
                 className="p-1 rounded-xl hover:bg-white hover:bg-opacity-25"
                 onClick={() => onRemovePlayer(p.id)}
               >
@@ -266,6 +272,7 @@ function PlayersInfo({ playerId, game, onRemovePlayer }) {
           </li>
         ))}
       </ul>
+      </aside>
     </>
   )
 }
@@ -294,9 +301,11 @@ function Round({
   allCardsSent,
   round,
   onCardClick,
-  onWinnerSelect
+  onWinnerSelect,
+  blackCardRef
 }) {
   const cardCounter = showCardCounter && (
+    <main>
     <GameCard
       as={motion.div}
       animate={counterAnimation}
@@ -308,7 +317,8 @@ function Round({
           <p>cartas enviadas</p>
         </>
       }
-    />
+      />
+      </main>
   )
 
   return (
@@ -318,7 +328,11 @@ function Round({
       )}
       <div className="py-4 flex flex-wrap items-start justify-center">
         {round.blackCard && (
-          <GameCard className="m-2" type="black" text={decodeHtml(round.blackCard.text)} badge={round.blackCard.pick} />
+          <main>
+            <h2>
+          <GameCard aria-live="polite" ref={blackCardRef} tabindex="0" className="m-2" type="black" text={decodeHtml(round.blackCard.text)} badge={round.blackCard.pick} />
+          </h2>
+          </main>
         )}
         {cardCounter}
         {allCardsSent &&
@@ -349,6 +363,7 @@ function Round({
                 ) : (
                   <GameCard
                     text={c.hidden ? '¿?' : decodeHtml(c.card)}
+                    aria-pressed = {i !== 0}
                     className={classNames({ '-mt-6': i !== 0 }, 'm-2 text-left border-t-2 border-gray-300')}
                     type="white"
                     key={i}
@@ -378,7 +393,6 @@ function CardPicker({ cardsToPick, cards = [], onCardsPicked, onDiscard }) {
   const selectCardMessage = cardsToPick === 1 ? 'Elije una carta' : `Elije ${cardsToPick} cartas`
   const showSendButton = selected.length >= cardsToPick
   const showDiscardButton = selected.length >= 1
-
   function selectCard(card) {
     if (cardIsSelected(card)) {
       setSelected(selected.filter(c => c !== card))
@@ -413,12 +427,12 @@ function CardPicker({ cardsToPick, cards = [], onCardsPicked, onDiscard }) {
           {cardsToPick === 1 ? 'Elegir esta carta' : 'Elegir estas cartas'}
         </PrimaryButton>
         <Button
-          disabled={!showDiscardButton}
-          onClick={discard}
-          className={classNames({ 'opacity-50 pointer-events-none': !showDiscardButton })}
-        >
-          Descartar
-        </Button>
+                  disabled={!showDiscardButton}
+                  onClick={discard}
+                  className={classNames({ 'opacity-50 pointer-events-none': !showDiscardButton })}
+                  >
+                   Descartar
+                   </Button>
       </motion.div>
       <div className="overflow-x-auto max-w-full">
         <div className="flex md:justify-center items-start gap-3 p-1 my-1">
@@ -428,12 +442,14 @@ function CardPicker({ cardsToPick, cards = [], onCardsPicked, onDiscard }) {
                 key={card}
                 type="white"
                 text={decodeHtml(card)}
+                aria-pressed={cardIsSelected(card) ? true : false}
+                aria-label={decodeHtml(card)}
                 className={classNames('text-left flex-shrink-0 hover:bg-gray-50 focus:outline-none', {
                   'ring-4 ring-blue-500': cardIsSelected(card)
                 })}
                 as={motion.button}
                 badge={cardsToPick > 1 ? selected.indexOf(card) + 1 : 0}
-                onClick={() => selectCard(card)}
+                onClick={() => selectCard(card) }
                 initial={{ x: 200, opacity: 0, width: 0 }}
                 animate={{ x: 0, opacity: 1, width: '' }}
                 exit={{ x: -200, width: 0, opacity: 0 }}

@@ -35,8 +35,8 @@ export default function NameEditModal({ game, socket }) {
             Este nombre ya lo utiliza otra persona.
           </motion.p>
         )}
-        <Button aria-hidden={!name || nameIsRepeated} disabled={!name || nameIsRepeated} className="disabled:opacity-50 mt-4" type="submit">
-          Enviar
+        <Button disabled={!name || nameIsRepeated} className="disabled:opacity-50 mt-4" type="submit">
+          Entrar
         </Button>
       </form>
     </Modal>

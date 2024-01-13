@@ -1,0 +1,2 @@
+ARreglar el modal en playgame de la carta ganadora, a ver si puedo reemplazar los espacios en blanco de alguna manera.
+arreglar el card selected de las cartas del juez en playGame
