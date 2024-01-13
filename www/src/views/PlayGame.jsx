@@ -225,20 +225,20 @@ function getPlayerState(game, player) {
 
   if (isHost) {
     return (
-      <span title="Juez de las cartas">
+      <span aria-atomic="true" aria-live="polite" title="Juez de las cartas">
         <CrownSimple className="w-6 h-6" />
       </span>
     )
   }
   if (hasPlayed) {
     return (
-      <span title="Jugador. Carta enviada">
+      <span aria-atomic="true" aria-live="polite" title="Jugador. Carta enviada">
         <Check className="w-6 h-6" />
       </span>
     )
   } else {
     return (
-      <span title="Jugador. Esperando a que este jugador envíe su carta">
+      <span aria-atomic="true" aria-live="polite" title="Jugador. Esperando a que este jugador envíe su carta">
         <Clock className="w-6 h-6 opacity-50" />
       </span>
     )
@@ -253,16 +253,16 @@ function PlayersInfo({ playerId, game, onRemovePlayer }) {
     <>
       <p aria-live="polite" className="text-lg font-bold pb-3">Ronda {roundNum}</p>
       <aside>
-      <ul aria-atomic="true" aria-live="polite" className="px-1 space-y-3 overflow-hidden">
+      <ul className="px-1 space-y-3 overflow-hidden">
         {game.players.map(p => (
           <li key={p.id} className="flex space-x-3 items-center">
             {getPlayerState(game, p)}
-            <span className={`${p.id === host ? 'font-bold' : 'font-medium'} truncate text-lg`}>{p.name} </span>
-            <span className="font-medium font-mono bg-gray-900 px-2 py-1 rounded-lg"> ({p.points} puntos)</span>
+            <span aria-atomic="true" aria-live="polite" className={`${p.id === host ? 'font-bold' : 'font-medium'} truncate text-lg`}>{p.name} </span>
+            <span aria-atomic="true" aria-live="polite" className="font-medium font-mono bg-gray-900 px-2 py-1 rounded-lg"> ({p.points} puntos)</span>
             {playerId === creator && (
               <button
                 title="Expulsar jugador"
-                aria-label="Expulsar jugador"
+                aria-label={"Expulsar a "+ p.id}
                 className="p-1 rounded-xl hover:bg-white hover:bg-opacity-25"
                 onClick={() => onRemovePlayer(p.id)}
               >
