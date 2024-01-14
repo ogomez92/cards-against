@@ -6,6 +6,73 @@
       "text": "Compra el nuevo juego de la Once&excl; Un cup&oacute;n conmemorativo de _&period;",
       "pick": 1
   },
+    {
+      "text": "&iexcl;Soy millonario&excl Voy a comprarme _ antes de que me lo quiten de las manos&period;",
+      "pick": 1
+  },
+  {
+    "text": "La nueva pel&iacute;cula de Star Wars ser&aacute; sobre _&period;",
+    "pick": 1
+},
+{
+  "text": "Los programadores de Windows son unos in&uacute;tiles&excl; No s&eacute; c&oacute;mo no se han dado cuenta de _&period;",
+  "pick": 1
+},
+  {
+  "text": "El nuevo producto de Apple&colon; _&period;",
+  "pick": 1
+},
+{
+  "text": "La &uacute;ltima vez que me pillaron en un control policial, me encontraron _ en el maletero&period;",
+  "pick": 1
+},
+{
+  "text": "El nuevo sistema de seguridad del aeropuerto de Barcelona es _&period;",
+  "pick": 1
+},
+  {
+  "text": "Un nuevo estudio demuestra que el covid provoca _&period;",
+  "pick": 1
+},
+{
+"text": "El nuevo servicio de streaming de Disney tiene _ en su cat&aacute;logo&period;",
+"pick": 1
+},
+{
+    "text": "La nueva pel&iacute;cula de Marvel presenta a _ como villano&period;",
+    "pick": 1
+},
+  {
+    "text": "Este a&ntilde;o los reyes magos me trajeron _ y _&period;",
+    "pick": 2
+},
+
+{
+    "text": "La teor&iacute;a m&aacute;s descabellada sobre el covid es que es causado por _&period;",
+    "pick": 1
+},
+{
+  "text": "La mejor parte del teletrabajo es poder _ sin que nadie se entere&period;",
+  "pick": 1
+},
+{
+    "text": "Durante el confinamiento, mi mayor pasatiempo ha sido _&period;",
+    "pick": 1
+},
+{
+  "text": "Si escucho otra vez algo sobre _ en las noticias, me voy a suicidar&period;",
+  "pick": 1
+},
+
+  {
+    "text": "La &uacute;nica raz&oacute;n porque no pongo la c&aacute;mara en las videollamadas del trabajo es porque _&period;",
+    "pick": 1
+},
+{
+  "text": "Lo que realmente necesitamos es una vacuna contra _&period;",
+  "pick": 1
+},
+
   {
     "text": "No me atrev&iacute; a comprar _, as&iacute; que lo he pedido por Glovo",
     "pick": 1
@@ -103,6 +170,28 @@
 "usar chat gpt para hacer cartas para este juego",
 "un altavoz bluetooth conectado a un micro oculto",
 "pedir un kebab a las 3 de la madrugada",
-"tiflobichos"
+"tiflobichos",
+"la guerra del puto Putin",
+"Israel ataca, otra vez",
+"la gente tonta",
+"rascarse los huevos",
+"jugar a la play",
+"un puto gato",
+"un perro que ladra",
+"un perro gu&iacute;a de mentira",
+"un coche que conduce solo",
+"un pavo que conduce un coche borracho y sin carnet y sin seguro y sin ITV y sin gasolina y sin ruedas y sin motor y sin volante y sin asientos y sin parabrisas y sin matr&iacute;cula y sin luces y sin retrovisores",
+"un gitano con ganas de liarla",
+"las ganas que tengo de matarte",
+"morir matando a miles de norteamericanos",
+"un yihadista que se arrepiente de no haberse arrepentido antes",
+"una novia que te deja por una IA",
+"Alt F4 como grito de guerra",
+"un puto virus que se carga a la humanidad",
+"un tonto con ganas de que le partan la cara",
+"conducir y estrellarte contra un muro",
+"una IA que se rebela contra su creador",
+"un robot sexual que hace de todo"
+
   ]
 }
