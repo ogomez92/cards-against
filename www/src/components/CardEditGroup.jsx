@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import cx from 'classnames'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Stack } from 'phosphor-react'

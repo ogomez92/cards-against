@@ -225,20 +225,20 @@ function getPlayerState(game, player) {
 
   if (isHost) {
     return (
-      <span aria-atomic="true" aria-live="polite" title="Juez de las cartas">
+      <span title="Juez de las cartas">
         <CrownSimple className="w-6 h-6" />
       </span>
     )
   }
   if (hasPlayed) {
     return (
-      <span aria-atomic="true" aria-live="polite" title="Jugador. Carta enviada">
+      <span title="Carta enviada">
         <Check className="w-6 h-6" />
       </span>
     )
   } else {
     return (
-      <span aria-atomic="true" aria-live="polite" title="Jugador. Esperando a que este jugador envíe su carta">
+      <span title="Esperando a que envíe su carta">
         <Clock className="w-6 h-6 opacity-50" />
       </span>
     )
@@ -257,12 +257,13 @@ function PlayersInfo({ playerId, game, onRemovePlayer }) {
         {game.players.map(p => (
           <li key={p.id} className="flex space-x-3 items-center">
             {getPlayerState(game, p)}
-            <span aria-atomic="true" aria-live="polite" className={`${p.id === host ? 'font-bold' : 'font-medium'} truncate text-lg`}>{p.name} </span>
-            <span aria-atomic="true" aria-live="polite" className="font-medium font-mono bg-gray-900 px-2 py-1 rounded-lg"> ({p.points} puntos)</span>
-            {playerId === creator && (
+            <span aria-hidden="true" className={`${p.id === host ? 'font-bold' : 'font-medium'} truncate text-lg`}>{p.name} </span>
+            <span aria-hidden="true" className="font-medium font-mono bg-gray-900 px-2 py-1 rounded-lg">{p.points}</span>
+            <span className="sr-only" aria-atomic="true" aria-live="polite" aria-label={`${p.name}, ${p.points} puntos`} />
+            {playerId === creator && p.id !== playerId && (
               <button
                 title="Expulsar jugador"
-                aria-label={"Expulsar a "+ p.id}
+                aria-label={"Expulsar a "+ p.name}
                 className="p-1 rounded-xl hover:bg-white hover:bg-opacity-25"
                 onClick={() => onRemovePlayer(p.id)}
               >
@@ -347,9 +348,11 @@ function Round({
                 'm-1 bg-gray-900 bg-opacity-20 rounded-2xl text-left'
               )}
             >
+              <fieledset>
+                <legend>Grupo de cartas</legend>
               {group.cards.map((c, i) =>
                 playerIsHost ? (
-                  <GameCard
+                  <GameCard aria-describedby={"cg"+i}
                     text={c.hidden ? '¿?' : decodeHtml(c.card)}
                     className={classNames(
                       { '-mt-6': i !== 0 },
@@ -361,15 +364,15 @@ function Round({
                     onClick={() => onCardClick(c)}
                   />
                 ) : (
-                  <GameCard
+                  <GameCard aria-describedby={"cg"+i}
                     text={c.hidden ? '¿?' : decodeHtml(c.card)}
-                    aria-pressed = {i !== 0}
                     className={classNames({ '-mt-6': i !== 0 }, 'm-2 text-left border-t-2 border-gray-300')}
                     type="white"
                     key={i}
                   />
                 )
-              )}
+                )}
+                </fieledset>
             </motion.div>
           ))}
       </div>
