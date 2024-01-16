@@ -286,8 +286,10 @@ function decodeHtml(html) {
 
 function groupCardsByPlayer(cards) {
   const players = {}
+  let number = 0;
   for (const card of cards) {
-    players[card.player] = players[card.player] || { player: card.player, cards: [] }
+    number = number + 1;
+    players[card.player] = players[card.player] || { player: card.player, cards: [], groupNumber: number }
     players[card.player].cards.push(card)
   }
   return Object.values(players)
@@ -348,8 +350,8 @@ function Round({
                 'm-1 bg-gray-900 bg-opacity-20 rounded-2xl text-left'
               )}
             >
-              <fieledset>
-                <legend>Grupo de cartas</legend>
+              <fieldset>
+                <legend>{"Grupo de cartas" + group.groupNumber}</legend>
               {group.cards.map((c, i) =>
                 playerIsHost ? (
                   <GameCard aria-describedby={"cg"+i}
@@ -372,7 +374,7 @@ function Round({
                   />
                 )
                 )}
-                </fieledset>
+                </fieldset>
             </motion.div>
           ))}
       </div>

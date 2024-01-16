@@ -31,9 +31,9 @@ export default function GameCard({
       {...props}
     >
       <div
-aria-label={typeof(text) === 'string' ? text.toString().replaceAll('_', '(blanco)') : null}
       style={{ color }} className="font-semibold">
         <span aria-hidden="true">{text}</span>
+        <span className="sr-only">{typeof(text) === 'string' ? text.toString().replaceAll('_', '(blanco)') : null}</span>
       </div>
       {showBadge && (
         <span className="absolute bottom-2 right-2 block font-medium w-6 text-center rounded-full bg-white text-gray-900">

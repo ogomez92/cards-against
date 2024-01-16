@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import config from '@/config'
 import { useQuery } from 'react-query'
 
