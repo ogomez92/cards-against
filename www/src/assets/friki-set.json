@@ -3,195 +3,204 @@
   "name": "Frikicartas contra la humanidad ",
   "blackCards": [
     {
+      "text": "El libro favorito de mi profesor jud&iacute;o se titula",
+      "pick": 1
+    },
+    {
       "text": "Compra el nuevo juego de la Once&excl; Un cup&oacute;n conmemorativo de _&period;",
       "pick": 1
-  },
+    },
+    {
+      "text": "Los protagonistas de la nueva pel&iacute;cula son _ y _&period",
+      "pick": 2
+    },
+
     {
       "text": "&iexcl;Soy millonario&excl Voy a comprarme _ antes de que me lo quiten de las manos&period;",
       "pick": 1
-  },
-  {
-    "text": "La nueva pel&iacute;cula de Star Wars ser&aacute; sobre _&period;",
-    "pick": 1
-},
-{
-  "text": "Los programadores de Windows son unos in&uacute;tiles&excl; No s&eacute; c&oacute;mo no se han dado cuenta de _&period;",
-  "pick": 1
-},
-  {
-  "text": "El nuevo producto de Apple&colon; _&period;",
-  "pick": 1
-},
-{
-  "text": "La &uacute;ltima vez que me pillaron en un control policial, me encontraron _ en el maletero&period;",
-  "pick": 1
-},
-{
-  "text": "El nuevo sistema de seguridad del aeropuerto de Barcelona es _&period;",
-  "pick": 1
-},
-  {
-  "text": "Un nuevo estudio demuestra que el covid provoca _&period;",
-  "pick": 1
-},
-{
-"text": "El nuevo servicio de streaming de Disney tiene _ en su cat&aacute;logo&period;",
-"pick": 1
-},
-{
-    "text": "La nueva pel&iacute;cula de Marvel presenta a _ como villano&period;",
-    "pick": 1
-},
-  {
-    "text": "Este a&ntilde;o los reyes magos me trajeron _ y _&period;",
-    "pick": 2
-},
-
-{
-    "text": "La teor&iacute;a m&aacute;s descabellada sobre el covid es que es causado por _&period;",
-    "pick": 1
-},
-{
-  "text": "La mejor parte del teletrabajo es poder _ sin que nadie se entere&period;",
-  "pick": 1
-},
-{
-    "text": "Durante el confinamiento, mi mayor pasatiempo ha sido _&period;",
-    "pick": 1
-},
-{
-  "text": "Si escucho otra vez algo sobre _ en las noticias, me voy a suicidar&period;",
-  "pick": 1
-},
-
-  {
-    "text": "La &uacute;nica raz&oacute;n porque no pongo la c&aacute;mara en las videollamadas del trabajo es porque _&period;",
-    "pick": 1
-},
-{
-  "text": "Lo que realmente necesitamos es una vacuna contra _&period;",
-  "pick": 1
-},
-
-  {
-    "text": "No me atrev&iacute; a comprar _, as&iacute; que lo he pedido por Glovo",
-    "pick": 1
-},
-
-  {
-    "text": "Qu&eacute; guay que soy, he puesto un micro oculto en mi casa por si escucho _&period",
-    "pick": 1
-},
-
-  {
-    "text": "El otro d&iacute;a entr&eacute; en una web con un bot&oacute;n sin etiquetar que en realidad era para aceptar que vengan a mi casa para _&period;",
-    "pick": 1
-},
-{
-  "text": "Acepto las cookies y tambi&eacute;n _&period;",
-  "pick": 1
-},
-{
-  "text": "Puedo aceptar las cookies y tambi&eacute;n que me robes los datos, pero no _&period;",
-  "pick": 1
-},
+    },
+    {
+      "text": "La nueva pel&iacute;cula de Star Wars ser&aacute; sobre _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Los programadores de Windows son unos in&uacute;tiles&excl; No s&eacute; c&oacute;mo no se han dado cuenta de _&period;",
+      "pick": 1
+    },
+    {
+      "text": "El nuevo producto de Apple&colon; _&period;",
+      "pick": 1
+    },
+    {
+      "text": "La &uacute;ltima vez que me pillaron en un control policial, me encontraron _ en el maletero&period;",
+      "pick": 1
+    },
+    {
+      "text": "El nuevo sistema de seguridad del aeropuerto de Barcelona es _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Un nuevo estudio demuestra que el covid provoca _&period;",
+      "pick": 1
+    },
+    {
+      "text": "El nuevo servicio de streaming de Disney tiene _ en su cat&aacute;logo&period;",
+      "pick": 1
+    },
+    {
+      "text": "La nueva pel&iacute;cula de Marvel presenta a _ como villano&period;",
+      "pick": 1
+    },
+    {
+      "text": "Este a&ntilde;o los reyes magos me trajeron _ y _&period;",
+      "pick": 2
+    },
+    {
+      "text": "La teor&iacute;a m&aacute;s descabellada sobre el covid es que es causado por _&period;",
+      "pick": 1
+    },
+    {
+      "text": "La mejor parte del teletrabajo es poder _ sin que nadie se entere&period;",
+      "pick": 1
+    },
+    {
+      "text": "Durante el confinamiento, mi mayor pasatiempo ha sido _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Si escucho otra vez algo sobre _ en las noticias, me voy a suicidar&period;",
+      "pick": 1
+    },
+    {
+      "text": "La &uacute;nica raz&oacute;n porque no pongo la c&aacute;mara en las videollamadas del trabajo es porque _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Lo que realmente necesitamos es una vacuna contra _&period;",
+      "pick": 1
+    },
+    {
+      "text": "No me atrev&iacute; a comprar _, as&iacute; que lo he pedido por Glovo",
+      "pick": 1
+    },
+    {
+      "text": "Qu&eacute; guay que soy, he puesto un micro oculto en mi casa por si escucho _&period",
+      "pick": 1
+    },
+    {
+      "text": "El otro d&iacute;a entr&eacute; en una web con un bot&oacute;n sin etiquetar que en realidad era para aceptar que vengan a mi casa para _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Acepto las cookies y tambi&eacute;n _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Puedo aceptar las cookies y tambi&eacute;n que me robes los datos, pero no _&period;",
+      "pick": 1
+    },
     {
       "text": "Los usuarios de mi web se quejan siempre de _&period;",
       "pick": 1
-  },
-  {
-    "text": "La próxima gran actualizaci&oacute;n de iOS seguro que trae _&period;",
-    "pick": 1
-},
-      {
-        "text": "Durante mi &uacute;ltima marat&oacute;n de programaci&oacute;n, sobreviv&iacute; a base de _&period;",
-        "pick": 1
+    },
+    {
+      "text": "La próxima gran actualizaci&oacute;n de iOS seguro que trae _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Durante mi &uacute;ltima marat&oacute;n de programaci&oacute;n, sobreviv&iacute; a base de _&period;",
+      "pick": 1
     },
     {
       "text": "La verdadera raz&oacute;n por la que no se ha implementado la IA en la empresa es _&period;",
       "pick": 1
-  },
-  {
-    "text": "Mi setup de trabajo remoto no est&aacute; completo sin _&period;",
-    "pick": 1
-},
-{
-  "text": "Despu&eacute;s de 48 horas programando como un puto loco, me di cuenta que mi nueva app solo necesita _&period;",
-  "pick": 1
-},
-{
-  "text": "No puedo creer que en el 2021 todav&iacute;a haya gente que no entienda _&period;",
-  "pick": 1
-},
-{
-  "text": "Me siento gran hacker cuando consigo _&period;",
-  "pick": 1
-},
-{
-  "text": "Estoy pensando en hacer un tutorial en YouTube sobre _&period;",
-  "pick": 1
-},
-{
-  "text": "El mejor truco para aumentar la velocidad de tu ordenador es _&period;",
-  "pick": 1
-},
-{
-  "text": "La gente se sorprende cuando les digo que mi trabajo consiste en _&period;",
-  "pick": 1
-},
-{
-  "text": "Mi sueño es crear una empresa basada en _&period;",
-  "pick": 1
-},
-{
-  "text": "Si pudiera programar cualquier cosa, crear&iacute;a una app para _&period;",
-  "pick": 1
-},
-{
-  "text": "Los empresarios chinos han empezado a invertir en mi empresa porque resuelve _&period;",
-  "pick": 1
-},
-{
-  "text": "Siempre uso el mismo password para todo: es una combinaci&oacute;n de mi fecha de nacimiento y mi pasi&oacute;n por _&period;",
-  "pick": 1
-}
+    },
+    {
+      "text": "Mi setup de trabajo remoto no est&aacute; completo sin _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Despu&eacute;s de 48 horas programando como un puto loco, me di cuenta que mi nueva app solo necesita _&period;",
+      "pick": 1
+    },
+    {
+      "text": "No puedo creer que en el 2021 todav&iacute;a haya gente que no entienda _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Me siento gran hacker cuando consigo _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Estoy pensando en hacer un tutorial en YouTube sobre _&period;",
+      "pick": 1
+    },
+    {
+      "text": "El mejor truco para aumentar la velocidad de tu ordenador es _&period;",
+      "pick": 1
+    },
+    {
+      "text": "La gente se sorprende cuando les digo que mi trabajo consiste en _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Mi sueño es crear una empresa basada en _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Si pudiera programar cualquier cosa, crear&iacute;a una app para _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Los empresarios chinos han empezado a invertir en mi empresa porque resuelve _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Siempre uso el mismo password para todo: es una combinaci&oacute;n de mi fecha de nacimiento y mi pasi&oacute;n por _&period;",
+      "pick": 1
+    }
   ],
   "whiteCards": [
     "El nivel AAA de las WCAG",
     "Accesibilidad por un tubo",
     "Deslizar la pantalla de tu m&oacute;vil 50 veces como si fuera un rasca de la once",
-"Un menu&uacute; desplegable que no funciona con teclado",
-"un ciego dando palos de ciego",
-"una audiodescripci&oacute;n en un acento incomprensible",
-"batidos sustitutivos",
-"una imagen sin texto alternativo",
-"La tecla Escape que en realidad no escapa de nada",
-"Pulsar enviar y que se borre todo el formulario",
-"usar chat gpt para hacer cartas para este juego",
-"un altavoz bluetooth conectado a un micro oculto",
-"pedir un kebab a las 3 de la madrugada",
-"tiflobichos",
-"la guerra del puto Putin",
-"Israel ataca, otra vez",
-"la gente tonta",
-"rascarse los huevos",
-"jugar a la play",
-"un puto gato",
-"un perro que ladra",
-"un perro gu&iacute;a de mentira",
-"un coche que conduce solo",
-"un pavo que conduce un coche borracho y sin carnet y sin seguro y sin ITV y sin gasolina y sin ruedas y sin motor y sin volante y sin asientos y sin parabrisas y sin matr&iacute;cula y sin luces y sin retrovisores",
-"un gitano con ganas de liarla",
-"las ganas que tengo de matarte",
-"morir matando a miles de norteamericanos",
-"un yihadista que se arrepiente de no haberse arrepentido antes",
-"una novia que te deja por una IA",
-"Alt F4 como grito de guerra",
-"un puto virus que se carga a la humanidad",
-"un tonto con ganas de que le partan la cara",
-"conducir y estrellarte contra un muro",
-"una IA que se rebela contra su creador",
-"un robot sexual que hace de todo"
-
+    "Un menu&uacute; desplegable que no funciona con teclado",
+    "un ciego dando palos de ciego",
+    "una audiodescripci&oacute;n en un acento incomprensible",
+    "batidos sustitutivos",
+    "una imagen sin texto alternativo",
+    "La tecla Escape que en realidad no escapa de nada",
+    "Pulsar enviar y que se borre todo el formulario",
+    "usar chat gpt para hacer cartas para este juego",
+    "un altavoz bluetooth conectado a un micro oculto",
+    "pedir un kebab a las 3 de la madrugada",
+    "tiflobichos",
+    "la guerra del puto Putin",
+    "Israel ataca, otra vez",
+    "la gente tonta",
+    "rascarse los huevos",
+    "jugar a la play",
+    "un puto gato",
+    "un perro que ladra",
+    "un perro gu&iacute;a de mentira",
+    "un coche que conduce solo",
+    "un pavo que conduce un coche borracho y sin carnet y sin seguro y sin ITV y sin gasolina y sin ruedas y sin motor y sin volante y sin asientos y sin parabrisas y sin matr&iacute;cula y sin luces y sin retrovisores",
+    "un gitano con ganas de liarla",
+    "las ganas que tengo de matarte",
+    "morir matando a miles de norteamericanos",
+    "un yihadista que se arrepiente de no haberse arrepentido antes",
+    "una novia que te deja por una IA",
+    "Alt F4 como grito de guerra",
+    "un puto virus que se carga a la humanidad",
+    "un tonto con ganas de que le partan la cara",
+    "conducir y estrellarte contra un muro",
+    "una IA que se rebela contra su creador",
+    "un robot sexual que hace de todo",
+    "jugar al Forza",
+    "curas con ganas de copular",
+    "ciberacoso",
+    "mein Kampf",
+    "un puto mono que se hace pasar por un ser humano",
+"un palestino en una bolsa de basura"
   ]
 }
