@@ -84,7 +84,7 @@ function PlayGameUI({ socket, game }) {
     })
   }
 
-  function onRoundWhiteCardClick(card) {
+  function onRoundWhiteCardClick(card, group) {
     if (!playerIsHost) {
       return
     }
@@ -95,6 +95,16 @@ function PlayGameUI({ socket, game }) {
         playerId: card.player
       })
     } else {
+      card.selected = true;
+      if (group !== undefined) {
+        for (const card of game.round.whiteCards) {
+          card.selected = false;
+        }
+
+        for (const card of group) {
+          card.selected = true;
+        }
+      }
       setWinner(card.player)
     }
   }
@@ -255,7 +265,7 @@ function PlayersInfo({ playerId, game, onRemovePlayer }) {
       <aside>
       <ul className="px-1 space-y-3 overflow-hidden">
         {game.players.map(p => (
-          <li key={p.id} className="flex space-x-3 items-center">
+          <li aria-live="polite" aria-atomic="true" key={p.id} className="flex space-x-3 items-center">
             {getPlayerState(game, p)}
             <span aria-hidden="true" className={`${p.id === host ? 'font-bold' : 'font-medium'} truncate text-lg`}>{p.name} </span>
             <span aria-hidden="true" className="font-medium font-mono bg-gray-900 px-2 py-1 rounded-lg">{p.points}</span>
@@ -333,7 +343,7 @@ function Round({
         {round.blackCard && (
           <main>
             <h2>
-          <GameCard aria-live="polite" ref={blackCardRef} tabindex="0" className="m-2" type="black" text={decodeHtml(round.blackCard.text)} badge={round.blackCard.pick} />
+          <GameCard aria-live="polite" ref={blackCardRef} tabIndex="0" className="m-2" type="black" text={decodeHtml(round.blackCard.text)} badge={round.blackCard.pick} />
           </h2>
           </main>
         )}
@@ -351,11 +361,12 @@ function Round({
               )}
             >
               <fieldset>
-                <legend>{"Grupo de cartas" + group.groupNumber}</legend>
+                <legend>{group.cards.length > 1 ? "Grupo de cartas" + group.groupNumber : null}</legend>
               {group.cards.map((c, i) =>
                 playerIsHost ? (
-                  <GameCard aria-describedby={"cg"+i}
+                  <GameCard
                     text={c.hidden ? '¿?' : decodeHtml(c.card)}
+                    aria-pressed={c.selected ? true : false}
                     className={classNames(
                       { '-mt-6': i !== 0 },
                       'm-2 text-left border-t-2 border-gray-300 focus:outline-none'
@@ -363,10 +374,10 @@ function Round({
                     type="white"
                     key={i}
                     as="button"
-                    onClick={() => onCardClick(c)}
+                    onClick={() => onCardClick(c, group.cards)}
                   />
                 ) : (
-                  <GameCard aria-describedby={"cg"+i}
+                  <GameCard
                     text={c.hidden ? '¿?' : decodeHtml(c.card)}
                     className={classNames({ '-mt-6': i !== 0 }, 'm-2 text-left border-t-2 border-gray-300')}
                     type="white"
