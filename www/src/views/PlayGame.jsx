@@ -265,11 +265,11 @@ function PlayersInfo({ playerId, game, onRemovePlayer }) {
       <aside>
       <ul className="px-1 space-y-3 overflow-hidden">
         {game.players.map(p => (
-          <li aria-live="polite" aria-atomic="false" key={p.id} className="flex space-x-3 items-center">
+          <li aria-live="polite" aria-atomic="true" key={p.id} className="flex space-x-3 items-center">
             {getPlayerState(game, p)}
             <span aria-hidden="true" className={`${p.id === host ? 'font-bold' : 'font-medium'} truncate text-lg`}>{p.name} </span>
             <span aria-hidden="true" className="font-medium font-mono bg-gray-900 px-2 py-1 rounded-lg">{p.points}</span>
-            <span className="sr-only" aria-atomic="true" aria-live="polite" aria-label={`${p.name}, ${p.points} puntos`} />
+            <span className="sr-only" aria-label={`${p.name}, ${p.points} puntos`} />
             {playerId === creator && p.id !== playerId && (
               <button
                 title="Expulsar jugador"
