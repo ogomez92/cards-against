@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import Button from '@/components/Button'
 import Container from '@/components/Container'
@@ -99,8 +100,8 @@ export default function PublicGames() {
       </div>
       <h3 className="mb-3 text-3xl font-medium">Partidas públicas</h3>
       {publicGames.length === 0 && (
-        <p>
-          No hay ninguna partida púublica disponible.{' '}
+        <p role="alert">
+          No hay ninguna partida pública disponible.{' '}
           <Link className="text-blue-300 hover:text-blue-200 transition-colors" to="/newgame">
             Crear partida
           </Link>
