@@ -3,44 +3,43 @@
   "name": "Frikicartas contra la humanidad ",
   "blackCards": [
     {
-      "text": "Navidad en familia: _ bajo el &aacute;rbol.",
+      "text": "Navidad en familia: _ bajo el &aacute;rbol&period;",
       "pick": 1
     },
     {
-      "text": "Justo cuando pensaba que el d&iacute;a no pod&iacute;a empeorar, me top&eacute; con _.",
+      "text": "Justo cuando pensaba que el d&iacute;a no pod&iacute;a empeorar, me top&eacute; con _&period;",
       "pick": 1
     },
     {
-      "text": "El t&iacute;tulo de mi autobiograf&iacute;a ser&aacute;: 'Sobreviv&iacute; a _ y otros desaf&iacute;os'.",
+      "text": "El t&iacute;tulo de mi autobiograf&iacute;a ser&aacute;: 'Sobreviv&iacute; a _ y otros desaf&iacute;os'&period;",
       "pick": 1
     },
     {
-      "text": "Mis padres siempre me dijeron que para madurar hace falta _.",
-      "pick": 1
-    },
-    
-    {
-      "text": "En mi pr&oacute;xima vida, me quiero reencarnar en _.",
+      "text": "Mis padres siempre me dijeron que para madurar hace falta _&period;",
       "pick": 1
     },
     {
-      "text": "La soluci&oacute;n a todos mis problemas parece ser _.",
+      "text": "En mi pr&oacute;xima vida, me quiero reencarnar en _&period;",
       "pick": 1
     },
     {
-      "text": "Las instrucciones del gpt gur&uacute; para alcanzar la paz interior comienzan por _.",
+      "text": "La soluci&oacute;n a todos mis problemas parece ser _&period;",
       "pick": 1
     },
     {
-      "text": "El &uacute;ltimo invento revolucionario de Elon Musk promete erradicar _ de todo el mundo.",
+      "text": "Las instrucciones del gpt gur&uacute; para alcanzar la paz interior comienzan por _&period;",
       "pick": 1
     },
     {
-      "text": "Nunca olvidar&eacute; la primera vez que experiment&eacute; _.",
+      "text": "El &uacute;ltimo invento revolucionario de Elon Musk promete erradicar _ de todo el mundo&period;",
       "pick": 1
     },
     {
-      "text": "La iron&iacute;a es cuando _ te salva la vida.",
+      "text": "Nunca olvidar&eacute; la primera vez que experiment&eacute; _&period;",
+      "pick": 1
+    },
+    {
+      "text": "La iron&iacute;a es cuando _ te salva la vida&period;",
       "pick": 1
     },
     {
@@ -52,15 +51,15 @@
       "pick": 1
     },
     {
-      "text": "Voy a empezar a _ para ligar m&aacute;s.",
+      "text": "Voy a empezar a _ para ligar m&aacute;s&period;",
       "pick": 1
     },
     {
-      "text": "Voy a ver si con la tonter&iacute;a de la ley de amnist&iacute;a me puedo librar de _.",
+      "text": "Voy a ver si con la tonter&iacute;a de la ley de amnist&iacute;a me puedo librar de _&period;",
       "pick": 1
     },
     {
-      "text": "Me siento como un hacker de puta madre cuando consigo _.",
+      "text": "Me siento como un hacker de puta madre cuando consigo _&period;",
       "pick": 1
     },
     {
@@ -222,11 +221,34 @@
     {
       "text": "Siempre uso el mismo password para todo: es una combinaci&oacute;n de mi fecha de nacimiento y mi pasi&oacute;n por _&period;",
       "pick": 1
-    }
+    },
+    {
+      "text": "La nueva serie de Netflix trata sobre _&period;",
+      "pick": 1
+    },
+    {
+      "text": "El nuevo juego de mesa que ha arrasado en las tiendas es _&period;",
+      "pick": 1
+    },
+    {
+      "text": "La nueva moda entre los influencers es _&period;",
+      "pick": 1
+    },
+    {
+      "text": "El nuevo gadget que no puede faltar en tu casa es _&period;",
+      "pick": 1
+    },
+        {
+      "text": "El nuevo deporte extremo que todos quieren probar es _&period;",
+      "pick": 1
+    },
+    {
+      "text": "El nuevo libro de autoayuda se titula 'C&oacute;mo superar _'&period;",
+      "pick": 1
+    },
   ],
   "whiteCards": [
     "El nivel AAA de las WCAG",
-    "Accesibilidad por un tubo",
     "Deslizar la pantalla de tu m&oacute;vil 50 veces como si fuera un rasca de la once",
     "Un menu&uacute; desplegable que no funciona con teclado",
     "un ciego dando palos de ciego",
@@ -281,6 +303,10 @@
     "gente que te llama para ofrecerte pr&eacute;stamos",
     "un moro con la cabeza rebentada",
     "catalanes terroristas",
+    "un etarra descontrolado",
+    "palestinos con ganas de guerra",
+    "un moro con ganas de liarla",
+    "salir a la calle con ganas de robar carteras",
     "amnist&iacute;a para todos",
     "quejarme de todo",
     "vender armas a Israel",
@@ -291,6 +317,16 @@
     "la danza de la victoria al actualizar el NVDA y que no se rompa ning&uacute;n complemento",
     "accesibilidad por un tubo",
     "GitHub copilot",
-    "cantar en medio de la calle"
+    "cantar en medio de la calle",
+    "un hospital infantil",
+    "una ambulancia sin frenos",
+    "el &uacute;ltimo deseo de un condenado a muerte",
+    "un transplante de cerebro urgente",
+    "el men&uacute; vegano en Auschwitz",
+    "una colecta para el sicario del barrio",
+    "un grupo de WhatsApp con 800 personas",
+    "el club de fans de Charles Manson",
+    "ser esclavo de tu empresa",
+    "un escape room en un campo de minas"
   ]
 }
