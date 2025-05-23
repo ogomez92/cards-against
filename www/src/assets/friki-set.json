@@ -3,6 +3,51 @@
   "name": "Frikicartas contra la humanidad ",
   "blackCards": [
     {
+      "text": "Navidad en familia: _ bajo el &aacute;rbol.",
+      "pick": 1
+    },
+    {
+      "text": "Justo cuando pensaba que el d&iacute;a no pod&iacute;a empeorar, me top&eacute; con _.",
+      "pick": 1
+    },
+    {
+      "text": "El t&iacute;tulo de mi autobiograf&iacute;a ser&aacute;: 'Sobreviv&iacute; a _ y otros desaf&iacute;os'.",
+      "pick": 1
+    },
+    {
+      "text": "Mis padres siempre me dijeron que para madurar hace falta _.",
+      "pick": 1
+    },
+    
+    {
+      "text": "En mi pr&oacute;xima vida, me quiero reencarnar en _.",
+      "pick": 1
+    },
+    {
+      "text": "La soluci&oacute;n a todos mis problemas parece ser _.",
+      "pick": 1
+    },
+    {
+      "text": "Las instrucciones del gpt gur&uacute; para alcanzar la paz interior comienzan por _.",
+      "pick": 1
+    },
+    {
+      "text": "El &uacute;ltimo invento revolucionario de Elon Musk promete erradicar _ de todo el mundo.",
+      "pick": 1
+    },
+    {
+      "text": "Nunca olvidar&eacute; la primera vez que experiment&eacute; _.",
+      "pick": 1
+    },
+    {
+      "text": "La iron&iacute;a es cuando _ te salva la vida.",
+      "pick": 1
+    },
+    {
+      "text": "",
+      "pick": 1
+    },
+    {
       "text": "El libro favorito de mi profesor jud&iacute;o se titula",
       "pick": 1
     },
@@ -11,10 +56,9 @@
       "pick": 1
     },
     {
-      "text": "Voy a ver si con la tonter&iacute;a de la ley de amnist&iaacute;a me puedo librar de _.",
+      "text": "Voy a ver si con la tonter&iacute;a de la ley de amnist&iacute;a me puedo librar de _.",
       "pick": 1
     },
-
     {
       "text": "Me siento como un hacker de puta madre cuando consigo _.",
       "pick": 1
@@ -27,7 +71,6 @@
       "text": "Los protagonistas de la nueva pel&iacute;cula son _ y _&period",
       "pick": 2
     },
-
     {
       "text": "&iexcl;Soy millonario&excl; Voy a comprarme _ antes de que me lo quiten de las manos&period;",
       "pick": 1
@@ -114,6 +157,14 @@
     },
     {
       "text": "Los usuarios de mi web se quejan siempre de _&period;",
+      "pick": 1
+    },
+    {
+      "text": "Peor que la guerra en gaza: _",
+      "pick": 1
+    },
+    {
+      "text": "Vi un anuncio en internet sobre _",
       "pick": 1
     },
     {
@@ -214,24 +265,32 @@
     "ciberacoso",
     "mein Kampf",
     "un puto mono que se hace pasar por un ser humano",
-"un palestino en una bolsa de basura",
-"beber cerveza hasta morir",
-"una bomba nuclear",
-"un amigo falso que no te habla",
-"el lefote de un orco",
-"una vacuna que te mete el covid",
-"un puto gordo que no para de comer y de cagar",
-"una lata de cocacola como piercing",
-"otakus",
-"un pc sin pantalla",
-"leer el m&oacute;vil de la pareja",
-"cantantes espa&ntilde;oles que intentan cantar en ingl&eacute;s",
-"estafadores indios",
-"gente que te llama para ofrecerte pr&eacute;stamos",
-"un moro con la cabeza rebentada",
-"catalanes terroristas",
-"amnist&iacute;a para todos",
-"quejarme de todo",
-"cantar en medio de la calle"
+    "un palestino en una bolsa de basura",
+    "beber cerveza hasta morir",
+    "una bomba nuclear",
+    "un amigo falso que no te habla",
+    "el lefote de un orco",
+    "una vacuna que te mete el covid",
+    "un puto gordo que no para de comer y de cagar",
+    "una lata de cocacola como piercing",
+    "otakus",
+    "un pc sin pantalla",
+    "leer el m&oacute;vil de la pareja",
+    "cantantes espa&ntilde;oles que intentan cantar en ingl&eacute;s",
+    "estafadores indios",
+    "gente que te llama para ofrecerte pr&eacute;stamos",
+    "un moro con la cabeza rebentada",
+    "catalanes terroristas",
+    "amnist&iacute;a para todos",
+    "quejarme de todo",
+    "vender armas a Israel",
+    "Palestina libre",
+    "el toro embolao",
+    "actualizar el NVDA y que se rompan todos los complementos",
+    "actualizar el NVDA y que se rompa el eloquence",
+    "la danza de la victoria al actualizar el NVDA y que no se rompa ning&uacute;n complemento",
+    "accesibilidad por un tubo",
+    "GitHub copilot",
+    "cantar en medio de la calle"
   ]
 }
